@@ -13,6 +13,7 @@ The first thing you need is to have minikube installed.  This is simple on the M
 - docker (for Mac)
 - minikube
 - virtualbox
+- homebrew
 
 ```
 brew update && brew install kubectl && brew cask install docker minikube virtualbox
