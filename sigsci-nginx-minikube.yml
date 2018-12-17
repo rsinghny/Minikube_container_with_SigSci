@@ -22,6 +22,13 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+        env: 
+            name: "SIGSCI_HOSTNAME"
+            value: "sigsci-nginx-minikube"
+            name: "SIGSCI_ACCESSKEYID"
+            value: "38bdff1c-a3d9-4683-8184-b3332d67351e"    
+            name: "SIGSCI_SECRETACCESSKEY"
+            value: "gko4zy3ZKro7LrqsiFeroDxNHyoNJEtFd0EqrIS9jPo"
         resources:
           requests:
             memory: "64Mi"
@@ -45,4 +52,4 @@ spec:
   selector:
     run: sigsci-nginx-minikube-exposed
   type: NodePort
-  
+              
